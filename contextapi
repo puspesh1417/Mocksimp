@@ -1,0 +1,14 @@
+import { createContext } from "react";
+import Contextapi from "../Contextapi";
+import "./styles.css";
+const Firstname =createContext();
+export default function App() {
+  return (
+    <div className="App">
+     <Firstname.Provider value={"kumar"}>
+<Contextapi/>
+       </Firstname.Provider>
+    </div>
+  );
+}
+export{Firstname};
