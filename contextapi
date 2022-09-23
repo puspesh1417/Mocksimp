@@ -12,3 +12,19 @@ export default function App() {
   );
 }
 export{Firstname};
+
+
+///child where it is used
+
+import React ,{useContext}from 'react';
+import { Firstname } from '../App';
+
+export default function UseContext() {
+    const fname=useContext(Firstname);
+  return (
+
+    <h1>
+        My Name Is{fname}
+    </h1>
+  )
+}
